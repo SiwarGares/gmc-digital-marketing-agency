@@ -7,6 +7,8 @@
     --primary-background-color-gray  : #F3F3F3;
     --primary-background-color-dark  : #191A23;
     --primary-color-black : #000000;
+    --primary-logo-color-black: #33475B;
+
 
 }
 
@@ -66,7 +68,8 @@ button{
     border: 1px solid var(--primary-background-color-dark);
     color: var(--primary-background-color-white);
     background-color: var(--primary-background-color-dark);
-    width: 9rem;
+    width: 70%;
+    padding: 0.8rem;
     height: 2.3rem;
     border-radius: 5px;
 }
@@ -104,5 +107,272 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: var(--primary-logo-color-black);
+}
+
+.service .text-container
+{
+    display: flex;
+    justify-content :flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.service .text-container h2
+{
+    background-color: var(--primary-background-color-green);
+    margin-left: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+
+}
+
+
+.service .card-container .container-1 ,.service .card-container .container-2 ,.service .card-container .container-3  
+{
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+
+}
+
+
+.service .card-container .container-1 .card-1 ,.service .card-container .container-1 .card-2, .service .card-container .card-container-2 .card-3, .service .card-container .card-container-2 .card-4,.service .card-container .container-3 .card-5 ,.service .card-container .container-3 .card-6
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+#card-3 , #card-4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service .card-container .container-1 .card-1
+{
+    background-color: var(--primary-background-color-gray);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    box-shadow: 2rem var(--primary-color-black);
+    padding: 1rem;
+
+}
+
+
+
+.service .card-container .container-1 .card-1 .card-text-container ,.service .card-container .container-1 .card-2 .card-text-container ,#card-3 .card-text-container,#card-4 .card-text-container,.service .card-container .container-3 .card-5 .card-text-container ,.service .card-container .container-3 .card-6 .card-text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.service .card-container .container-1 .card-1 .card-text-container .learn-more ,.service .card-container .container-1 .card-2 .card-text-container .learn-more,#card-3 .card-text-container .learn-more,#card-4 .card-text-container .learn-more,.service .card-container .container-3 .card-5 .card-text-container .learn-more ,.service .card-container .container-3 .card-6 .card-text-container .learn-more
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.service .card-container .container-1 .card-2
+{
+    background-color: var(--primary-background-color-green);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    box-shadow: 2rem var(--primary-color-black);
+    padding: 1rem;
+}
+
+#card-3
+{
+    background-color: var(--primary-background-color-dark);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+#card-4
+{
+    background-color: var(--primary-background-color-gray);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    padding: 1rem;
+
+}
+
+.service .card-container .container-3 .card-5
+{
+    background-color: var(--primary-background-color-green);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    padding: 1rem;
+
+}
+
+.service .card-container .container-3 .card-6
+{
+    background-color: var(--primary-background-color-dark);
+    border: 1px solid var(--primary-background-color-dark);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+
+
+.service .card-container .container-1 .card-1 .card-text-container h3
+{
+    background-color: var(--primary-background-color-green);
+    border-radius: 0.8rem;
+
+}
+
+.service .card-container .container-1 .card-2 .card-text-container h3
+{
+    background-color: var(--primary-background-color-white);
+    border-radius: 0.8rem;
+
+}
+
+#card-3 .card-text-container h3
+{
+    background-color: var(--primary-background-color-white);
+    border-radius: 0.8rem;
+}
+
+#card-3 .card-text-container .learn-more p
+{
+    color: var(--primary-background-color-white);
+
+}
+#card-4 .card-text-container h3
+{
+    background-color: var(--primary-background-color-green);
+    border-radius: 0.8rem
+
+}
+
+.service .card-container .container-3 .card-5 .card-text-container h3
+{
+    background-color: var(--primary-background-color-white);
+    border-radius: 0.8rem;
+
+}
+
+.service .card-container .container-3 .card-6 .card-text-container h3
+{
+    background-color: var(--primary-background-color-white);
+    border-radius: 0.8rem
+
+}
+.service .card-container .container-3 .card-6 .card-text-container .learn-more p
+{
+    color: var(--primary-background-color-white);
+}
+
+.proposal
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-background-color-gray);
+    margin: 5rem;
+    border-radius: 2rem;
+}
+
+.proposal .text-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.case-studies .text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.case-studies .text-container h2 
+{
+    background-color: var(--primary-background-color-green);
+    margin-left: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.case-studies .paragraphes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-background-color-dark);
+    gap: 2rem;
+    margin: 4rem;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.case-studies .paragraphes p
+{
+    color: var(--primary-background-color-white);
+    margin-bottom: 0.8rem;
+
+}
+.case-studies .paragraphes .learn-more p
+{
+    color: var(--primary-background-color-green);
+}
+
+
+.case-studies .paragraphes .parag-1 ,.case-studies .paragraphes .parag-2 ,.case-studies .paragraphes .parag-3 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.case-studies .paragraphes .learn-more
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.work-process .text-container 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.work-process .text-container h2
+{
+    background-color: var(--primary-background-color-green);
+    margin-left: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
 }
 
