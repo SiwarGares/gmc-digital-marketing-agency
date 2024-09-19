@@ -8,6 +8,7 @@
     --primary-background-color-dark  : #191A23;
     --primary-color-black : #000000;
     --primary-logo-color-black: #33475B;
+    --primary-background-color-light-dark : #292A32;
 
 
 }
@@ -540,7 +541,7 @@ button{
 
 .testimonials .card-container .card-1 .bubble-container,.testimonials .card-container .card-2 .bubble-container,.testimonials .card-container .card-3 .bubble-container,.testimonials .card-container .card-4 .bubble-container, .testimonials .card-container .card-5 .bubble-container,.testimonials .card-container .card-6 .bubble-container
 {
-    border: 5px solid var(--primary-background-color-green);
+    border: 1px solid var(--primary-background-color-green);
     border-radius: 1rem;
 }
 .testimonials .card-container h3
@@ -549,3 +550,222 @@ button{
 }
 
 
+.contact-us .text-container 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.contact-us .text-container h2 
+{
+    background-color: var(--primary-background-color-green);
+    margin-left: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+
+/* .contact-us .form-container  */
+
+.contact-us .contact-container 
+{
+     margin: 3rem;
+   /*   display: flex;
+     flex-direction: column; */
+}
+
+.contact-us .contact-container  
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-background-color-gray);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 1rem 4rem;
+}
+
+
+#radio-form
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+   margin-left: 3rem;
+ 
+}
+
+#contact-form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin: 1rem 2.5rem;
+    
+
+}
+
+#contact-form input
+ {
+    display: block;
+    width: 30rem; 
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.9rem;
+    border: 1px solid var(--primary-background-color-dark);
+   
+}
+
+input[name="message"] 
+{
+    height: 8rem;
+}
+
+#contact-btn
+{
+    width: 100%;
+}
+
+
+
+footer
+{
+    background-color: var(--primary-color-black);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 0 3rem;
+    margin-top: 4rem;
+}
+footer .navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :1rem 4rem; 
+    margin: 1rem;
+    
+}
+footer .navbar .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer .navbar .logo h1
+{
+    color: var(--primary-background-color-white);
+}
+
+footer nav.navigation a
+{
+    text-decoration: none;
+    color: var(--primary-background-color-white);
+    font-weight: 400;
+    padding: 0.4rem;
+    margin: 0 1.5rem;
+    text-decoration: underline;
+}
+
+footer .social-icons
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+footer .contact-infos 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-background-color-white);
+}
+footer .contact-infos .text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+footer .contact-infos .text-container h3
+{
+    background-color: var(--primary-background-color-green);
+    color: var(--primary-background-color-dark);
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+
+#footer-form
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 2.5rem;
+    background-color: var(--primary-background-color-light-dark);
+    padding: 4rem;
+    border-radius: 2rem;
+    gap: 2rem;
+
+    
+}
+
+#footer-form input
+ {
+    display: block;
+    width: 30rem; 
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.9rem;
+    border: 1px solid var(--primary-background-color-white);
+    background-color: var(--primary-background-color-dark);
+    color: var(--primary-background-color-white);
+    height: 4rem;
+   
+}
+
+#footer-btn
+{
+    background-color: var(--primary-background-color-green);
+    color: var(--primary-color-black);
+    margin-bottom: 0.5rem;
+    border-radius: 0.9rem;
+    border: 1px solid var(--primary-background-color-dark);
+    height: 4rem;
+
+   
+}
+
+footer .line-footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+footer .rights
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--primary-background-color-white);
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+    padding: 3rem 0;
+
+}
