@@ -4,25 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>digital marketing agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header> 
+   <header> 
         <div class="logo">
             <img src="assets/logo.png" alt="logo">
             <h1>Positivus</h1>
         </div>
+        
+   
         <nav class="navigation">
-            <a href="#About-us">About us</a>
-            <a href="#Services">Services</a>
-            <a href="#Use-cases">Use Cases</a>
-            <a href="#Pricing">Pricing</a>
-            <a href="#Blog">Blog</a>
-            <button id="header-button">Request a quote</button>
-          
+            <div class="menu-icon">
+                 <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+            <div  id="menuList" class="list" >
+                <a href="#About-us">About us</a>
+                <a href="#Services">Services</a>
+                <a href="#Use-cases">Use Cases</a>
+                <a href="#Pricing">Pricing</a>
+                <a href="#Blog">Blog</a>
+                <button id="header-button">Request a quote</button>
+            </div>
+            
+            
         </nav>
+
+       
     </header>
+
+  <!--   <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+            <h1>Positivus</h1>
+
+        </div>
+
+
+        <ul id="menuList">
+             <li><a href="#About-us">About us</a></li>
+             <li><a href="#Services">Services</a></li>
+                <li><a href="#Use-cases">Use Cases</a></li>
+                <li><a href="#Pricing">Pricing</a></li>
+                <li> <a href="#Blog">Blog</a</li>
+
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+       </div>
+
+
+    </nav> -->
 
 
     <section class="home" id="home">
@@ -51,7 +85,7 @@
 
     
     </section>
-
+ 
     <section class="service" id="Services">
         <div class="text-container">
             <h2>Services</h2>
@@ -63,7 +97,7 @@
             <div class="container-1">
                 <div class="card-1">
                     <div class="card-text-container">
-                        <h3>Search engine <br>optimisation</h3>
+                        <h1>Search engine <br>optimisation</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -78,7 +112,7 @@
 
                 <div class="card-2">
                     <div class="card-text-container">
-                        <h3>Pay-per-click <br>advertising</h3>
+                        <h1>Pay-per-click <br>advertising</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -99,7 +133,7 @@
             <div class="container-2">
                 <div class="card-3" id="card-3">
                     <div class="card-text-container">
-                        <h3>Social Media <br>Marketing</h3>
+                        <h1>Social Media <br>Marketing</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -114,7 +148,7 @@
 
                 <div class="card-4" id="card-4">
                     <div class="card-text-container">
-                        <h3>Email <br>Marketing</h3>
+                        <h1>Email <br>Marketing</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -132,7 +166,7 @@
             <div class="container-3">
                 <div class="card-5">
                     <div class="card-text-container">
-                        <h3>Content <br>Creation</h3>
+                        <h1>Content <br>Creation</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -147,7 +181,7 @@
 
                 <div class="card-6">
                     <div class="card-text-container">
-                        <h3>Analytics and  <br>Tracking</h3>
+                        <h1>Analytics and  <br>Tracking</h1>
                         <div class="learn-more">
                             <img src="assets/learn-more.png" alt="">
                             <p>Learn more</p>
@@ -161,10 +195,10 @@
                 </div>
             </div>
         </div>    
-    </section>
+    </section> 
 
 
-    <section class="proposal">
+     <section class="proposal">
         <div class="text-container">
             <h1>Let’s make things happen</h1>
             <p>Contact us today to learn more about how our digital <br>marketing services can help your business grow and <br> succeed online.</p>
@@ -175,7 +209,7 @@
             <img src="assets/proposal-img.png" alt="">
         </div>
 
-    </section>
+    </section> 
 
 
     <section class="case-studies" id="#Use-cases">
@@ -235,7 +269,7 @@
     </section>
 
 
-    <section class="work-process">
+   <section class="work-process">
         <div class="text-container">
             <h2>Our Working Process </h2>
             <p>Step-by-Step Guide to Achieving <br> Your Business Goals</p>
@@ -310,7 +344,106 @@
         </div>
 
         <div class="card-container">
-            <div class="card-container-1">
+                <div class="card-1">
+                    <div class="image-container">
+                        <img src="assets/team-member-1.png" alt="">
+                        <div class="text-container">
+                            <h5>John Smith</h5><br>
+                            <p>CEO and Founder</p>
+                        </div>
+                       
+                        <img src="assets/linked-in-icon.svg" alt="">
+
+                    </div>
+
+                    <img src="assets/team-line.png" alt="">
+
+                    <p>10+ years of experience in digital <br> marketing. Expertise in SEO, PPC,<br> and content strategy</p>
+
+                </div>
+                <div class="card-2">
+                    <div class="image-container">
+                        <img src="assets/team-member-2.png" alt="">
+                        <div class="text-container">
+                            <h5>Jane Doe</h5><br>
+                            <p>Director of Operations</p>
+                        </div>
+                        <img src="assets/linked-in-icon.svg" alt="">
+
+                    </div>
+                    <img src="assets/team-line.png" alt="">
+                    <p>7+ years of experience in project <br> management and team leadership.<br> Strong organizational and <br>communication skills</p>
+
+                    
+
+                </div>
+                <div class="card-3">
+                    <div class="image-container">
+                        <img src="assets/team-member-3.png" alt="">
+                        <div class="text-container">
+                            <h5>Michael Brown</h5><br>
+                            <p>Senior SEO Specialist</p>
+                        </div>
+                        <img src="assets/linked-in-icon.svg" alt="">
+
+                    </div>
+                    <img src="assets/team-line.png" alt="">
+                    <p>5+ years of experience in SEO and<br> content creation. Proficient in <br>keyword research and on-page <br>optimization</p>
+                </div>
+                    
+
+               
+                    <div class="card-4">
+                        <div class="image-container">
+                            <img src="assets/team-member-4.png" alt="">
+                            <div class="text-container">
+                                <h5>Emily Johnson</h5><br>
+                                <p>PPC Manager</p>
+                            </div>
+                            <img src="assets/linked-in-icon.svg" alt="">
+    
+                        </div>
+                        <img src="assets/team-line.png" alt="">
+                        <p>3+ years of experience in paid<br> search advertising. Skilled in <br>campaign management and<br> performance analysis</p>
+    
+                        
+    
+                    </div>
+                    <div class="card-5">
+                        <div class="image-container">
+                            <img src="assets/team-member-5.png" alt="">
+                            <div class="text-container">
+    
+                                <h5>Brian Williams</h5><br>
+                                <p>Social Media Specialist</p>
+                            </div>
+                            <img src="assets/linked-in-icon.svg" alt="">
+    
+                        </div>
+                        <img src="assets/team-line.png" alt="">
+                        <p>4+ years of experience in social<br> media marketing. Proficient in<br>creating and scheduling content,<br> analyzing metrics, and <br>building engagement</p>
+    
+                    </div>
+                    <div class="card-6">
+                        <div class="image-container">
+                            <img src="assets/team-member-6.png" alt="">
+                            <div class="text-container">
+                                <h5>Sarah Kim</h5><br>
+                                <p>Content Creator</p>
+                            </div>
+    
+                            <img src="assets/linked-in-icon.svg" alt="">
+    
+                        </div>
+                        <img src="assets/team-line.png" alt="">
+                        <p>2+ years of experience in writing<br>and editing<br>
+                            Skilled in creating compelling, SEO-<br>optimized content for various<br> industries</p>
+                    </div>
+    
+                
+                
+                
+                <!-- <div class="card-container-1">
 
                 <div class="card-1">
                     <div class="image-container">
@@ -360,11 +493,11 @@
 
                     
 
-                </div>
+                </div> -->
 
             </div>
 
-            <div class="card-container-2">
+            <!-- <div class="card-container-2">
                 <div class="card-4">
                     <div class="image-container">
                         <img src="assets/team-member-4.png" alt="">
@@ -414,7 +547,7 @@
                         Skilled in creating compelling, SEO-<br>optimized content for various<br> industries</p>
                 </div>
 
-            </div>
+            </div> -->
         </div>
 
         <div class="team-button">
@@ -532,8 +665,8 @@
         </div>
 
 
-        <footer>
-            <div class="navbar">
+        <!-- <footer>
+          <div class="navbar">
                 <div class="logo">
                     <img src="assets/logo-footer.png" alt="logo">
                     <h1>Positivus</h1>
@@ -552,10 +685,10 @@
                     <img src="assets/twitter.svg "alt="">
 
                 </div>
-            </div>
+            </div>  
 
 
-            <div class="contact-infos">
+             <div class="contact-infos">
                 <div class="text-container">
                     <h3>Contact us :</h3>
                     <p>Email: info@positivus.com</p>
@@ -563,13 +696,13 @@
                     <p>Address: 1234 Main St</p>
                     <p>Moonstone City, Stardust State 12345</p>
 
-                </div>
+                </div> 
 
                 <form id="footer-form">
                     <input type="email" value="Email" placeholder="Email" >
                     <button id="footer-btn">Subscribe to news</button>
-                </form>
-            </div>
+                </form> 
+            </div>  
             <div class="line-footer">
                 <img src="assets/line-footer.png" alt="">
             </div>
@@ -577,13 +710,33 @@
             <div class="rights">
                 <p>&copy; 2023 Positivus. All Rights Reserved.</p>
                 <p>Privacy Policy</p>
-            </div>
+            </div> 
 
 
-        </footer>
+        </footer> 
        
 
-    </section>
+    </section> -->
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "300px"
+                }
+            else
+                {
+                    menuList.style.maxHeight ="0px"
+                }
+        }
+    </script>
+
+
+
     
 </body>
-</html>
+</html> 
