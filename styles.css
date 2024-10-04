@@ -24,6 +24,12 @@
      
 
 }
+input[type="text"]::placeholder
+{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
 
 header
 {
@@ -467,8 +473,27 @@ button{
 
 }
 
+.work-process .card-container .card-1, .work-process .card-container .card-2, .work-process .card-container .card-3, .work-process .card-container .card-4, .work-process .card-container .card-5, .work-process .card-container .card-6
+{
+    cursor: pointer;
+}
 
-.team .text-container {
+.work-process .card-container .card-1 .paragraph, .work-process .card-container .card-2 .paragraph, .work-process .card-container .card-3 .paragraph, .work-process .card-container .card-4 .paragraph, .work-process .card-container .card-5 .paragraph, .work-process .card-container .card-6 .paragraph
+{
+    max-height: 0px;
+    overflow: hidden;
+}
+.work-process .card-container .card-1.active .paragraph , .work-process .card-container .card-2.active .paragraph, .work-process .card-container .card-3.active .paragraph, .work-process .card-container .card-4.active .paragraph, .work-process .card-container .card-5.active .paragraph, .work-process .card-container .card-6.active .paragraph
+{
+    max-height: 300px;
+}
+
+
+
+
+
+.team .text-container 
+{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1027,6 +1052,10 @@ footer .rights
     {
         width: 15rem;
     }
+    .home .logos-container
+    {
+        padding: 1rem;
+    }
 
 }
 @media (max-width:920px)
@@ -1040,10 +1069,17 @@ footer .rights
         width: 70%;
     }
 
-  /*   .list
+     .list
     {
-        display: none;
-    } */
+        
+        max-height: 0; /* Ensure initial state */
+        overflow: hidden; /* This ensures hidden overflow */
+        transition: max-height 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    } 
 
     .navigation nav
     {
@@ -1062,6 +1098,9 @@ footer .rights
  */    }
     header 
     {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
         background-color: var(--primary-background-color-white);
     } 
     .navigation a
@@ -1072,6 +1111,9 @@ footer .rights
     {
         display: block;
         color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #menu-list
     {
@@ -1119,6 +1161,10 @@ footer .rights
     .testimonials .card-container .card-1 .bubble-container,.testimonials .card-container .card-2 .bubble-container,.testimonials .card-container .card-3 .bubble-container
     {
         margin-left: 0;
+    }
+    .testimonials .stars-container 
+    {
+        display: none;
     }
 
     
@@ -1178,6 +1224,7 @@ footer .rights
     .work-process .card-container .card-1, .work-process .card-container .card-2, .work-process .card-container .card-3, .work-process .card-container .card-4, .work-process .card-container .card-5, .work-process .card-container .card-6 
     {
         flex-direction: column;
+        padding: 0.5rem;
     }
 }
 
@@ -1245,6 +1292,14 @@ footer .rights
 
     }
 }
+@media (max-width:480px)
+{
+    header 
+    {
+        gap: 0;
+    }
+}
+
 @media (max-width:425px)
 {
     .service .text-container
@@ -1334,21 +1389,60 @@ footer .rights
 
 
 }
+
+@media (max-width:422px)
+{
+ /*    .work-process .text-container
+    {
+        margin-top: 4rem;
+    } */
+    .service .text-container 
+    {
+        margin-top: 5rem;
+    }
+    .team .text-container 
+    {
+        margin-top: 3rem;
+    }
+
+    .testimonials .text-container 
+    {
+        margin-top: 5rem;
+    }
+    .contact-us .text-container 
+    {
+        margin-top: 3rem;
+    }
+
+}
+@media (max-width:383px)
+{
+    button
+    {
+        width: 80%;
+        height: 3rem;
+    }
+}
+
+
+
 @media (max-width:375px)
 {
     .testimonials .card-container, .testimonials .stars-container
     {
             margin: 0 1rem;
 
-    }
-}
-@media (max-width:375px)
-{
+    }  
     .team .card-container .card-1, .team .card-container .card-2, .team .card-container .card-3, .team .card-container .card-4, .team .card-container .card-5, .team .card-container .card-6
     {
         flex: 0.1;
     }
+    header
+    {
+        flex-direction: column;
+    }
 }
+
 
 @media (max-width:320px)
 {
